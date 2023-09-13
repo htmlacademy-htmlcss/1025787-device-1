@@ -76,6 +76,7 @@ body {
 /* Slayder */
 
 .slyder {
+  color: #000000;
   background-color: #FFFFFF;
 }
 
@@ -105,6 +106,7 @@ body {
 /* catalog-main */
 
 .catalog-main {
+  color: #000000;
   background-color: #FFFFFF;
 }
 
@@ -154,6 +156,7 @@ body {
 /* about-and-contacts */
 
 .about-and-contacts {
+  color: #000000;
   background-color: #FFFFFF;
 }
 
@@ -234,4 +237,121 @@ body {
   text-decoration: none;
   text-transform: uppercase;
   letter-spacing: 3.6px;
+}
+
+/* CATALOG */
+
+.navigation-user-link-exit {
+  color: #000000;
+  text-align: center;
+  text-decoration: none;
+}
+
+/* main-inner */
+
+.inner-header {
+  color: #000000;
+  background-color: #FFFFFF;
+}
+
+.inner-header-title {
+  font-family: "Raleway", sans-serif;
+  font-size: 50px;
+  line-height: 50px;
+  color: #000000;
+}
+
+.breadcrumbs {
+  color: #000000;
+}
+
+.breadcrumbs-link {
+  color: inherit;
+  text-decoration: none;
+}
+
+.catalog-products-title {
+  font-family: "Raleway", sans-serif;
+  font-size: 16px;
+  line-height: normal;
+  color: #000000;
+  letter-spacing: 3.2px;
+  text-transform: uppercase;
+}
+
+.catalog-filter-title {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 20px;
+  color: #000000;
+  letter-spacing: -0.36px;
+}
+
+.control {
+  font-size: 16px;
+  line-height: 20px;
+  color: #000000;
+}
+
+.select-control {
+  font-size: 18px;
+  line-height: 30px;
+  color: #000000;
+}
+
+/* product */
+
+.product-card {
+  color: #000000;
+  background-color: #FFFFFF;
+}
+
+.product-card-link {
+  text-decoration: none;
+}
+
+.product-card-image {
+  text-align: center;
+}
+
+.product-card-title {
+  color: #000000;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 20px;
+  letter-spacing: -0.36px;
+}
+
+.product-card-price {
+  color: #444444;
+  font-size: 18px;
+  line-height: normal;
+  text-align: right;
+}
+
+/* pagination */
+
+.block-pagination {
+  background-color: #EBEBEB;
+}
+
+.pagination-link {
+  color: #444444;
+  text-decoration: none;
+}
+
+.pagination-prev {
+  font-family: "Raleway", sans-serif;
+  font-size: 18px;
+  line-height: normal;
+  letter-spacing: 3.6px;
+  text-transform: uppercase;
+}
+
+.pagination-disabled, .pagination-current  {
+  color: #444444;
+}
+
+.pagination-next {
+  color: #000000;
 }

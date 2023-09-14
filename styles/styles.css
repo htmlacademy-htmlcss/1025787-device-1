@@ -48,6 +48,24 @@ body {
   background-color: #FFE17F;
 }
 
+.field-search {
+  font-size: 16px;
+  line-height: 20px;
+  color: #000000;
+  background-color: #FFE17F;
+  width: 359px;
+  height: 40px;
+  border: 2px solid #000000;
+}
+
+.button-search {
+  font-size: 16px;
+  line-height: 20px;
+  color: #000000;
+  text-align: center;
+  background-color: #FFE17F;
+}
+
 .navigation-user-link {
   color: #000000;
   text-align: center;
@@ -110,6 +128,10 @@ body {
   background-color: #FFFFFF;
 }
 
+.catalog-main-image {
+  background-color: #FFE17F;
+}
+
 .catalog-main-link {
   text-decoration: none;
 }
@@ -141,6 +163,32 @@ body {
 
 .delivery-link {
   text-decoration: none;
+}
+
+/* decorative images */
+
+.services-image-delivery {
+  background-image: url(../images/deliveryman.svg);
+  background-color: #F0F0F0;
+  background-repeat: no-repeat;
+  width: 136px;
+  height: 164px;
+}
+
+.services-image-warranty {
+  background-image: url(../images/call.svg);
+  background-color: #F0F0F0;
+  background-repeat: no-repeat;
+  width: 171px;
+  height: 195px;
+}
+
+.services-image-credit {
+  background-image: url(../images/credit.svg);
+  background-color: #F0F0F0;
+  background-repeat: no-repeat;
+  width: 156px;
+  height: 188px;
 }
 
 .delivery-about {
@@ -242,7 +290,7 @@ body {
 /* CATALOG */
 
 .navigation-user-link-exit {
-  color: #000000;
+  color: rgba(0, 0, 0, 0.3);
   text-align: center;
   text-decoration: none;
 }
@@ -348,8 +396,12 @@ body {
   text-transform: uppercase;
 }
 
-.pagination-disabled, .pagination-current  {
-  color: #444444;
+.pagination-disabled {
+  color: rgba(68, 68, 68, 0.3);
+}
+
+.pagination-current {
+  color: rgba(68, 68, 68, 0.6);
 }
 
 .pagination-next {

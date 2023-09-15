@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>Интернет-магазин «Девайс»</title>
+    <link rel="stylesheet" href="styles/styles.css">
   </head>
   <body>
     <header class="page-header">
@@ -69,6 +70,7 @@
       <h1 class="visually-hidden">Интернет-магазин «Девайс»</h1>
 
       <section class="gallery">
+        <div class="slyder">
         <h2 class="visually-hidden">Фотогалерея с описанием</h2>
         <button class="slider-button slider-prev" type="button">
           <span class="visually-hidden">Предыдущее фото</span>
@@ -85,7 +87,7 @@
               мощным лазером, замаскированным под стандартную камеру.
             </p>
             <a class="button button-details" href="#">Подробнее</a>
-            <table class="gallery-slide-table" border="1">
+            <table class="gallery-slide-table">
               <tr class="gallery-slide-table-row">
                 <td class="gallery-slide-parameter">Дальность полета</td>
                 <td class="gallery-slide-parameter">Радиус поражения</td>
@@ -104,7 +106,7 @@
               не пропускать занятия и соблюдать диету.
             </p>
             <a class="button button-details" href="#">Подробнее</a>
-            <table class="gallery-slide-table" border="1">
+            <table class="gallery-slide-table">
               <tr class="gallery-slide-table-row">
                 <td class="gallery-slide-parameter">Без подзарядки</td>
               </tr>
@@ -121,7 +123,7 @@
               Восемь (Восемь, Карл!) метров длиной и весом всего 5 кг.
             </p>
             <a class="button button-details" href="#">Подробнее</a>
-            <table class="gallery-slide-table" border="1">
+            <table class="gallery-slide-table">
               <tr class="gallery-slide-table-row">
                 <td class="gallery-slide-parameter">Длина палки</td>
                 <td class="gallery-slide-parameter">Вес палки</td>
@@ -152,6 +154,7 @@
             </button>
           </li>
         </ul>
+        </div>
       </section>
 
       <section class="catalog-main">
@@ -215,21 +218,21 @@
             <p class="services-text">Мы с удовольствием доставим ваш товар прямо <br>
               к вашему подъезду совершенно бесплатно! Ведь <br>
               мы неплохо заработаем, поднимая его на ваш этаж.</p>
-            <img class="services-image" src="images/deliveryman.svg" width="136" height="164" alt="Нарисованный курьер">
+            <div class="services-image-delivery"></div>
           </li>
           <li class="services-item-content">
             <h3 class="services-title">Гарантия</h3>
             <p class="services-text">Если из-за возгорания купленного у нас товара у вас <br>
               сгорит дом — не переживайте, мы выдадим вам новый. <br>
               Товар, не дом, конечно же.</p>
-            <img class="services-image" src="images/call.svg" width="171" height="195" alt="Телефонная трубка с облаком диалога с инструментами">
+            <div class="services-image-warranty"></div>
           </li>
           <li class="services-item-content">
             <h3 class="services-title">Кредит</h3>
             <p class="services-text">Залезть в долговую яму стало проще! Кредитные <br>
               консультанты подберут для вас наиболее выгодные <br>
               условия кредита. Выгодные для банка, разумеется.</p>
-            <img class="services-image" src="images/credit.svg" width="156" height="188" alt="Нарисованный человек с кредитной картой">
+            <div class="services-image-credit"></div>
           </li>
         </ul>
       <section class="delivery">
@@ -240,7 +243,7 @@
           <span class="visually-hidden">Форма доставки под заказ</span>
         </a>
       </section>
-
+      <div class="about-and-contacts">
       <section class="about">
         <h2 class="title">О нас</h2>
         <p class="text">Огромный выбор гаджетов не оставит равнодушным <br>
@@ -280,7 +283,7 @@
         </ul>
         <a class="button button-contacts" href="#">Напишите нам</a>
       </section>
-
+      </div>
       <section class="newsletter">
         <h2 class="visually-hidden">Подписка на рассылку</h2>
         <b class="newsletter-title">Подпишитесь на рассылку</b>
@@ -325,20 +328,17 @@
         <h2 class="visually-hidden">Социальные сети</h2>
         <ul class="footer-social-list">
           <li class="footer-social-item">
-            <a class="button-social" href="https://t.me/htmlacademy">
-              <img class="button-social-icon" src="images/icons/telegram.svg" width="40" height="40" alt="Telegram">
+            <a class="button button-social" href="https://t.me/htmlacademy">
               <span class="visually-hidden">Telegram</span>
             </a>
           </li>
           <li class="footer-social-item">
-            <a class="button-social" href="https://www.youtube.com/user/htmlacademyru">
-              <img class="button-social-icon" src="images/icons/youtube.svg" width="40" height="40" alt="Youtube">
+            <a class="button button-social" href="https://www.youtube.com/user/htmlacademyru">
               <span class="visually-hidden">Youtube</span>
             </a>
           </li>
           <li class="footer-social-item">
-            <a class="button-social" href="https://twitter.com/htmlacademy_ru">
-              <img class="button-social-icon" src="images/icons/twitter.svg" width="40" height="40" alt="Twitter">
+            <a class="button button-social" href="https://twitter.com/htmlacademy_ru">
               <span class="visually-hidden">Twitter</span>
             </a>
           </li>

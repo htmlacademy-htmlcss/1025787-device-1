@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>Интернет-магазин «Девайс»</title>
+    <link rel="stylesheet" href="styles/styles.css">
   </head>
   <body>
     <header class="page-header">
@@ -12,7 +13,7 @@
         </a>
         <form class="search-form" action="https://echo.htmlacademy.ru/" method="get">
           <label for="page-header-search">Поиск</label>
-          <input class="field-search" type="search" id="page-header-search" name="page-header-search" placeholder="Текст поиска">
+          <input class="field-search" type="search" id="page-header-search" name="page-header-search" placeholder="Поиск по сайту">
           <button class="button-search" type="submit">Найти</button>
         </form>
         <ul class="navigation-user">
@@ -163,11 +164,11 @@
         <a class="button button-decrease" href="#">
           <span class="visually-hidden">По убыванию</span>
         </a>
-
+      <div class="product-card">
         <ul class="product-list">
           <li class="product-card-item">
             <a class="product-card-link" href="#">
-              <img class="product-card-image" src="images/catalog/product-1.jpg" width="360" height="380" alt="Любительская селфи-палка">
+              <img class="product-card-image" src="images/catalog/product-1.jpg" width="360" height="380" alt="">
               <h3 class="product-card-title">Любительская селфи-палка</h3>
               <p class="product-card-price">500 ₽</p>
             </a>
@@ -177,7 +178,7 @@
           </li>
           <li class="product-card-item">
             <a class="product-card-link" href="#">
-              <img class="product-card-image" src="images/catalog/product-2.jpg" width="360" height="380" alt="Профессиональная селфи-палка">
+              <img class="product-card-image" src="images/catalog/product-2.jpg" width="360" height="380" alt="">
               <h3 class="product-card-title">Профессиональная селфи-палка</h3>
               <p class="product-card-price">1 500 ₽</p>
             </a>
@@ -187,7 +188,7 @@
           </li>
           <li class="product-card-item">
             <a class="product-card-link" href="#">
-              <img class="product-card-image" src="images/catalog/product-3.jpg" width="360" height="380" alt="Непотопляемая селфи-палка">
+              <img class="product-card-image" src="images/catalog/product-3.jpg" width="360" height="380" alt="">
               <h3 class="product-card-title">Непотопляемая селфи-палка</h3>
               <p class="product-card-price">2 500 ₽</p>
             </a>
@@ -197,7 +198,7 @@
           </li>
           <li class="product-card-item">
             <a class="product-card-link" href="#">
-              <img class="product-card-image" src="images/catalog/product-4.jpg" width="360" height="380" alt="Селфи-палка «Следуй за мной»">
+              <img class="product-card-image" src="images/catalog/product-4.jpg" width="360" height="380" alt="">
               <h3 class="product-card-title">Селфи-палка «Следуй за мной»</h3>
               <p class="product-card-price">1 500 ₽</p>
             </a>
@@ -207,29 +208,32 @@
           </li>
         </ul>
         <button class="button pagination-show-more" type="button">Загрузить ещё</button>
-        <ul class="pagination">
-          <li class="pagination-item">
-            <a class="pagination-link pagination-prev pagination-disabled">Назад</a>
-          </li>
-          <li class="pagination-item">
-            <a class="pagination-link pagination-current">1</a>
-          </li>
-          <li class="pagination-item">
-            <a class="pagination-link" href="#">2</a>
-          </li>
-          <li class="pagination-item">
-            <a class="pagination-link" href="#">3</a>
-          </li>
-          <li class="pagination-item">
-            <a class="pagination-link" href="#">...</a>
-          </li>
-          <li class="pagination-item">
-            <a class="pagination-link" href="#">15</a>
-          </li>
-          <li class="pagination-item">
-            <a class="pagination-link pagination-prev pagination-next" href="#">Вперёд</a>
-          </li>
-        </ul>
+        <div class="block-pagination">
+          <ul class="pagination">
+            <li class="pagination-item">
+              <a class="pagination-link pagination-prev pagination-disabled">Назад</a>
+            </li>
+            <li class="pagination-item">
+              <a class="pagination-link pagination-current">1</a>
+            </li>
+            <li class="pagination-item">
+              <a class="pagination-link" href="#">2</a>
+            </li>
+            <li class="pagination-item">
+              <a class="pagination-link" href="#">3</a>
+            </li>
+            <li class="pagination-item">
+              <a class="pagination-link" href="#">...</a>
+            </li>
+            <li class="pagination-item">
+              <a class="pagination-link" href="#">15</a>
+            </li>
+            <li class="pagination-item">
+              <a class="pagination-link pagination-prev pagination-next" href="#">Вперёд</a>
+            </li>
+          </ul>
+        </div>
+      </div>
       </section>
     </main>
 
@@ -261,20 +265,17 @@
         <h2 class="visually-hidden">Социальные сети</h2>
         <ul class="footer-social-list">
           <li class="footer-social-item">
-            <a class="button-social" href="https://t.me/htmlacademy">
-              <img class="button-social-icon" src="images/icons/telegram.svg" width="40" height="40" alt="Telegram">
+            <a class="button button-social" href="https://t.me/htmlacademy">
               <span class="visually-hidden">Telegram</span>
             </a>
           </li>
           <li class="footer-social-item">
-            <a class="button-social" href="https://www.youtube.com/user/htmlacademyru">
-              <img class="button-social-icon" src="images/icons/youtube.svg" width="40" height="40" alt="Youtube">
+            <a class="button button-social" href="https://www.youtube.com/user/htmlacademyru">
               <span class="visually-hidden">Youtube</span>
             </a>
           </li>
           <li class="footer-social-item">
-            <a class="button-social" href="https://twitter.com/htmlacademy_ru">
-              <img class="button-social-icon" src="images/icons/twitter.svg" width="40" height="40" alt="Twitter">
+            <a class="button button-social" href="https://twitter.com/htmlacademy_ru">
               <span class="visually-hidden">Twitter</span>
             </a>
           </li>

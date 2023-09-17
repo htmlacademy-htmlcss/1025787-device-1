@@ -93,7 +93,7 @@ body {
 
 /* Slayder */
 
-.slyder {
+.slider {
   color: #000000;
   background-color: #FFFFFF;
 }
@@ -163,32 +163,6 @@ body {
 
 .delivery-link {
   text-decoration: none;
-}
-
-/* decorative images */
-
-.services-image-delivery {
-  background-image: url(../images/deliveryman.svg);
-  background-color: #F0F0F0;
-  background-repeat: no-repeat;
-  width: 136px;
-  height: 164px;
-}
-
-.services-image-warranty {
-  background-image: url(../images/call.svg);
-  background-color: #F0F0F0;
-  background-repeat: no-repeat;
-  width: 171px;
-  height: 195px;
-}
-
-.services-image-credit {
-  background-image: url(../images/credit.svg);
-  background-color: #F0F0F0;
-  background-repeat: no-repeat;
-  width: 156px;
-  height: 188px;
 }
 
 .delivery-about {

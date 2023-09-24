@@ -22,7 +22,15 @@
   font-display: swap;
 }
 
+html {
+  height: 100%;
+}
+
 body {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
   font-family: "Rubik", sans-serif;
   font-size: 18px;
   line-height: 30px;
@@ -91,7 +99,13 @@ body {
   text-decoration: none;
 }
 
-/* Slayder */
+/* Pages */
+
+.main-container {
+  flex-grow: 1;
+}
+
+/* Slider */
 
 .slider {
   color: #000000;

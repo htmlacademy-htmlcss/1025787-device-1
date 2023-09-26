@@ -460,6 +460,10 @@ body {
   text-decoration: none;
 }
 
+.catalog-products {
+  display: flex;
+}
+
 .catalog-products-title {
   font-family: "Raleway", sans-serif;
   font-size: 16px;
@@ -467,6 +471,15 @@ body {
   color: #000000;
   letter-spacing: 3.2px;
   text-transform: uppercase;
+}
+
+.catalog-filter {
+  width: 260px;
+  padding: 0 0 0 60px;
+}
+
+.text-container {
+  padding: 0 0 0 60px;
 }
 
 .catalog-filter-title {
@@ -477,10 +490,18 @@ body {
   letter-spacing: -0.36px;
 }
 
+.catalog-right-column {
+  width: 840px;
+}
+
 .control {
   font-size: 16px;
   line-height: 20px;
   color: #000000;
+}
+
+.sort-container {
+  padding: 20px 40px;
 }
 
 .select-control {
@@ -494,6 +515,10 @@ body {
 .product-card {
   color: #000000;
   background-color: #FFFFFF;
+}
+
+.product-list {
+  padding: 70px 40px 0 40px;
 }
 
 .product-card-link {

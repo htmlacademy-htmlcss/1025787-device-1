@@ -149,7 +149,7 @@ body {
 
 .slider-image {
   display: block;
-  margin: 0 auto;
+  margin: 0 0;
 }
 
 .description {
@@ -381,6 +381,22 @@ body {
   background-color: #444444;
 }
 
+.page-footer-container {
+  display: flex;
+  width: 1160px;
+  margin: 0 auto;
+}
+
+.footer-contacts {
+  width: 240px;
+  margin-right: 118px;
+}
+
+.footer-contacts {
+  width: 240px;
+  margin-right: 118px;
+}
+
 .footer-contacts-address {
   color: inherit;
   font-size: 16px;
@@ -390,6 +406,16 @@ body {
 
 .footer-contacts-address-phone {
   color: #FFFFFF;
+}
+
+.footer-navigation-social {
+  display: flex;
+  margin: 0 auto;
+  flex-direction: column;
+}
+
+.footer-navigation {
+  width: 444px;
 }
 
 .footer-navigation-link {

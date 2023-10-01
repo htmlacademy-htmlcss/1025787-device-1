@@ -11,28 +11,30 @@
         <a class="navigation-logo" href="index.html">
           <img class="page-header-logo" src="images/logo-header.svg" width="145" height="36" alt="Логотип интернет-магазин «Девайс».">
         </a>
-        <form class="search-form" action="https://echo.htmlacademy.ru/" method="get">
-          <label for="page-header-search">Поиск</label>
-          <input class="field-search" type="search" id="page-header-search" name="page-header-search" placeholder="Поиск по сайту">
-          <button class="button-search" type="submit">Найти</button>
-        </form>
-        <ul class="navigation-user">
-          <li class="navigation-user-item">
-            <a class="navigation-user-link" href="#">
-              <span class="visually-hidden">Профиль</span>
-              Коля Петухов
-            </a>
-          </li>
-          <li class="navigation-user-item">
-            <a class="navigation-user-link-exit" href="#">Выйти</a>
-          </li>
-          <li class="navigation-user-item">
-            <a class="navigation-user-link" href="#">Сравнить</a>
-          </li>
-          <li class="navigation-user-item">
-            <a class="navigation-user-link" href="#">Корзина</a>
-          </li>
-        </ul>
+        <div class="form-and-navigation-user">
+          <form class="search-form" action="https://echo.htmlacademy.ru/" method="get">
+            <label for="page-header-search" class="visually-hidden">Поиск</label>
+            <input class="field-search" type="search" id="page-header-search" name="page-header-search" placeholder="Поиск по сайту">
+            <button class="button-search" type="submit">Найти</button>
+          </form>
+          <ul class="navigation-user">
+            <li class="navigation-user-item">
+              <a class="navigation-user-link" href="#">
+                <span class="visually-hidden">Профиль</span>
+                Коля Петухов
+              </a>
+            </li>
+            <li class="navigation-user-item">
+              <a class="navigation-user-link-exit" href="#">Выйти</a>
+            </li>
+            <li class="navigation-user-item">
+              <a class="navigation-user-link" href="#">Сравнить</a>
+            </li>
+            <li class="navigation-user-item">
+              <a class="navigation-user-link" href="#">Корзина</a>
+            </li>
+          </ul>
+        </div>
         <ul class="navigation-list">
           <li class="navigation-item">
             <a class="navigation-link" href="catalog.html">Каталог товаров</a>

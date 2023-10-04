@@ -162,15 +162,17 @@
                 <option value="price">Цена</option>
                 <option value="rating">Рейтинг</option>
               </select>
-              <a class="button button-increase" href="#">
-                <span class="visually-hidden">По возрастанию</span>
-              </a>
-              <a class="button button-decrease" href="#">
-                <span class="visually-hidden">По убыванию</span>
-              </a>
+              <div class="button-sort-container">
+                <a class="button button-increase" href="#">
+                  <span class="visually-hidden">По возрастанию</span>
+                </a>
+                <a class="button button-decrease" href="#">
+                  <span class="visually-hidden">По убыванию</span>
+                </a>
+              </div>
             </div>
 
-            <div class="product-card">
+            <div class="product-card-container">
               <ul class="product-list">
                 <li class="product-card-item">
                   <a class="product-card-link" href="#">
@@ -214,11 +216,9 @@
                 </li>
               </ul>
               <button class="button pagination-show-more" type="button">Загрузить ещё</button>
-              <div class="block-pagination">
+              <div class="pagination-container">
+                <a class="pagination-prev pagination-disabled">Назад</a>
                 <ul class="pagination">
-                  <li class="pagination-item">
-                    <a class="pagination-link pagination-prev pagination-disabled">Назад</a>
-                  </li>
                   <li class="pagination-item">
                     <a class="pagination-link pagination-current">1</a>
                   </li>
@@ -234,10 +234,8 @@
                   <li class="pagination-item">
                     <a class="pagination-link" href="#">15</a>
                   </li>
-                  <li class="pagination-item">
-                    <a class="pagination-link pagination-prev pagination-next" href="#">Вперёд</a>
-                  </li>
                 </ul>
+                <a class="pagination-prev pagination-next" href="#">Вперёд</a>
               </div>
             </div>
           </div>
@@ -274,26 +272,28 @@
           </section>
           <section class="footer-social">
             <h2 class="visually-hidden">Социальные сети</h2>
-            <ul class="footer-social-list">
-              <li class="footer-social-item">
-                <a class="button button-social" href="https://t.me/htmlacademy">
-                  <span class="visually-hidden">Telegram</span>
-                </a>
-              </li>
-              <li class="footer-social-item">
-                <a class="button button-social" href="https://www.youtube.com/user/htmlacademyru">
-                  <span class="visually-hidden">Youtube</span>
-                </a>
-              </li>
-              <li class="footer-social-item">
-                <a class="button button-social" href="https://twitter.com/htmlacademy_ru">
-                  <span class="visually-hidden">Twitter</span>
-                </a>
-              </li>
-            </ul>
-            <a class="htmlacademy-logo" href="https://htmlacademy.ru/">
-              <img class="page-header-htmlacademy-logo" src="images/logo-htmlacademy.svg" width="115" height="33" alt="Логотип «html academy»">
-            </a>
+            <div class="footer-social-container">
+              <ul class="footer-social-list">
+                <li class="footer-social-item">
+                  <a class="button button-social" href="https://t.me/htmlacademy">
+                    <span class="visually-hidden">Telegram</span>
+                  </a>
+                </li>
+                <li class="footer-social-item">
+                  <a class="button button-social" href="https://www.youtube.com/user/htmlacademyru">
+                    <span class="visually-hidden">Youtube</span>
+                  </a>
+                </li>
+                <li class="footer-social-item">
+                  <a class="button button-social" href="https://twitter.com/htmlacademy_ru">
+                    <span class="visually-hidden">Twitter</span>
+                  </a>
+                </li>
+              </ul>
+              <a class="htmlacademy-logo" href="https://htmlacademy.ru/">
+                <img class="page-header-htmlacademy-logo" src="images/logo-htmlacademy.svg" width="115" height="33" alt="Логотип «html academy»">
+              </a>
+            </div>
           </section>
         </div>
       </div>

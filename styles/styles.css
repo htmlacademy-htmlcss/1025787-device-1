@@ -79,9 +79,8 @@ body {
 
 .page-header {
   color: #000000;
-  background: linear-gradient(#FFFFFF 25px, #FFE17F 25px 100%);
-  margin-top: 15px;
-  height: 186px;
+  background: linear-gradient(#FFFFFF 40px, #FFE17F 40px 100%);
+  padding-top: 15px;
 }
 
 .navigation {
@@ -91,6 +90,10 @@ body {
   margin: 0 auto;
   padding: 5px 60px 0 60px;
   row-gap: 30px;
+}
+
+.navigation-logo {
+  align-self: flex-start;
 }
 
 .form-and-navigation-user {
@@ -248,7 +251,7 @@ body {
   font-size: 36px;
   line-height: 30px;
   padding: 0;
-  margin-bottom: 12px;
+  padding-bottom: 12px;
   padding-right: 20px;
 }
 
@@ -256,6 +259,7 @@ body {
   color: #444444;
   font-size: 16px;
   line-height: 30px;
+  font-weight: 400;
   padding: 0;
   padding-right: 20px;
 }
@@ -340,7 +344,7 @@ body {
 .services-item-content {
   width: 730px;
   min-height: 195px;
-  padding: 72px 0;
+  padding: 72px 200px 72px 0;
 }
 
 .image-services {
@@ -350,15 +354,15 @@ body {
 }
 
 .image-delivery {
-  background-image: url(../images/deliveryman.svg);
+  background-image: url("../images/deliveryman.svg");
 }
 
 .image-call {
-  background-image: url(../images/call.svg);
+  background-image: url("../images/call.svg");
 }
 
 .image-credit {
-  background-image: url(../images/credit.svg);
+  background-image: url("../images/credit.svg");
 }
 
 .services-list-content {
@@ -735,24 +739,33 @@ body {
 }
 
 .product-list {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: repeat(2, 360px);
+  row-gap: 44px;
+  column-gap: 40px;
   margin: 0;
-  padding: 70px 40px 0 40px;
+  padding: 70px 40px 44px 40px;
   list-style-type: none;
 }
 
-.product-card-item {
-  margin-bottom: 44px;
-}
-
 .product-card-link {
+  display: flex;
+  flex-direction: column;
+  row-gap: 32px;
   text-decoration: none;
 }
 
 .product-card-image {
-  text-align: center;
+  width: 360px;
+  height: 380px;
+  object-fit: contain;
+  background-color: rgba(211, 211, 211, 0.5);
+}
+
+.card-title-price {
+  display: grid;
+  grid-template-columns: 220px 120px;
+  gap: 20px;
 }
 
 .product-card-title {
@@ -761,6 +774,7 @@ body {
   font-weight: 700;
   line-height: 20px;
   letter-spacing: -0.36px;
+  margin: 0;
 }
 
 .product-card-price {
@@ -768,6 +782,7 @@ body {
   font-size: 18px;
   line-height: normal;
   text-align: right;
+  margin: 0;
 }
 
 /* pagination */

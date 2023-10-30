@@ -128,12 +128,12 @@ body {
 
 .form-and-navigation-user {
   display: flex;
-  align-content: start;
+  align-items: start;
 }
 
 .search-form {
   display: flex;
-  margin-right: 20px;
+  margin-right: 25px;
 }
 
 .field-search {
@@ -147,6 +147,13 @@ body {
   border-radius: 50px 0 0 50px;
   border-right: none;
   flex-shrink: 0;
+  background-image: url("../images/icons/search.svg");
+  background-repeat: no-repeat;
+  background-position: 16px center;
+}
+
+.field-search:focus {
+  outline: 2px solid #AF4FFF;
 }
 
 .button-search {
@@ -161,6 +168,20 @@ body {
   border-radius: 0 50px 50px 0;
   flex-shrink: 0;
   cursor: pointer;
+}
+
+.button-search:hover {
+  color: #FFFFFF;
+  background-color: #000000;
+}
+
+.button-search:focus {
+  outline: 2px solid #AF4FFF;
+}
+
+.button-search:active {
+  color: rgba(225, 225, 225, 0.3);
+  background-color: #000000;
 }
 
 .navigation-user {
@@ -179,24 +200,51 @@ body {
 
 .navigation-user-item:first-child {
   display: flex;
-  margin-right: auto;
+  flex-grow: 1;
+}
+
+.navigation-user-item .login {
+  background-image: url("../images/icons/login.svg");
+  background-repeat: no-repeat;
+  background-size: 15px 12px;
+  background-position: left center;
+  padding-left: 27px;
+}
+
+.navigation-user-item .compare {
+  background-image: url("../images/icons/sort.svg");
+  background-repeat: no-repeat;
+  background-size: 10px 12px;
+  background-position: left center;
+  padding-left: 24px;
+}
+
+.navigation-user-item .cart {
+  background-image: url("../images/icons/cart.svg");
+  background-repeat: no-repeat;
+  background-size: 16px 14px;
+  background-position: left center;
+  padding-left: 28px;
+}
+
+.navigation-user-item:hover {
+  opacity: 0.6;
+}
+
+.navigation-user-item:focus {
+  outline: 2px solid #AF4FFF;
+}
+
+.navigation-user-item:active {
+  opacity: 0.3;
 }
 
 .navigation-user-link {
-  position: relative;
+  flex-wrap: wrap;
   color: #000000;
   text-decoration: none;
-  margin: auto 0;
   padding-left: 25px;
-  max-width: 144px;
-}
-
-.navigation-user-icon {
-  position: absolute;
-  top: 0;
-  right: auto;
-  bottom: 0;
-  left: 0;
+  max-width: 150px;
   margin: auto 0;
 }
 
@@ -216,6 +264,18 @@ body {
   column-gap: 7px;
 }
 
+.navigation-item:hover:not(:first-child) {
+  opacity: 0.6;
+}
+
+.navigation-item:focus {
+  outline: 2px solid #AF4FFF;
+}
+
+.navigation-item:active:not(:first-child) {
+  opacity: 0.3;
+}
+
 .navigation-link {
   font-family: "Raleway", sans-serif;
   font-size: 18px;
@@ -230,7 +290,6 @@ body {
   display: grid;
   grid-template-columns: 220px 180px 180px;
   column-gap: 30px;
-  display: none;
 }
 
 .navigation-list-catalog {
@@ -240,6 +299,18 @@ body {
   margin: 0;
   padding: 0;
   list-style-type: none;
+}
+
+.navigation-item-catalog:hover {
+  opacity: 0.6;
+}
+
+.navigation-item-catalog:focus {
+  outline: 2px solid #AF4FFF;
+}
+
+.navigation-item-catalog:active {
+  opacity: 0.3;
 }
 
 .navigation-link-catalog {
@@ -384,7 +455,7 @@ body {
 /* services */
 
 .services {
-  background: linear-gradient(#FFFFFF 100px, #F0F0F0 100px 100%);
+  background: linear-gradient(#FFFFFF 106px, #F0F0F0 106px 100%);
   margin: 0 auto;
 }
 
@@ -394,6 +465,9 @@ body {
 }
 
 .services-list-button {
+  display: flex;
+  flex-direction: column;
+  row-gap: 35px;
   width: 280px;
   margin: 0 116px 0 0;
   padding: 0;
@@ -403,8 +477,24 @@ body {
 }
 
 .services-button {
-  width: 160px;
-  margin-bottom: 35px;
+  min-width: 160px;
+}
+
+.services-item-button:first-child .services-button {
+  background-color: #FFFFFF;
+}
+
+.services-item-button-current {
+  background-color: #000000;
+}
+
+.services-item-button-current:first-child .services-button {
+  background-color: #000000;
+  color: #FFE17F;
+}
+
+.services-item-button-current:first-child .button::before {
+  background-color: #000000;
 }
 
 .services-item-content {
@@ -770,7 +860,15 @@ body {
 .navigation-user-link-exit {
   color: rgba(0, 0, 0, 0.3);
   text-decoration: none;
-  margin-left: 28px;
+  margin-left: auto;
+}
+
+.navigation-user-link-exit:hover {
+  color: rgba(0, 0, 0, 1);
+}
+
+.navigation-user-link-exit:active {
+  color: rgba(0, 0, 0, 1);
 }
 
 /* main-inner */

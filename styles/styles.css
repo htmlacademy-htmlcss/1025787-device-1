@@ -124,6 +124,31 @@ body {
 
 .navigation-logo {
   align-self: flex-start;
+  height: 36px;
+}
+
+.page-footer-container .navigation-logo {
+  justify-self: start;
+}
+
+.page-catalog .navigation .navigation-logo,
+.page-footer-container .navigation-logo {
+  cursor: pointer;
+}
+
+.page-catalog .navigation .navigation-logo:hover,
+.page-footer-container .navigation-logo:hover{
+  opacity: 0.6;
+}
+
+.page-catalog .navigation .navigation-logo:focus,
+.page-footer-container .navigation-logo:focus {
+  outline: 2px solid #AF4FFF;
+}
+
+.page-catalog .navigation navigation-logo:active,
+.page-footer-container .navigation-logo:active {
+  opacity: 0.3;
 }
 
 .form-and-navigation-user {
@@ -1051,7 +1076,30 @@ body {
   padding: 0;
   color: #000000;
   list-style-type: none;
-  column-gap: 36px;
+}
+
+.breadcrumbs-item {
+  position: relative;
+  padding-right: 36px;
+}
+
+.breadcrumbs-item::after {
+  content: '';
+  position: absolute;
+  width: 4px;
+  height: 7px;
+  top: 0;
+  right: 16px;
+  bottom: 0;
+  left: auto;
+  margin: auto 0;
+  background-image: url("../images/icons/nav-arrow.svg");
+  background-repeat: no-repeat;
+  opacity: 0.3;
+}
+
+.breadcrumbs-item:last-child:after {
+  content: none;
 }
 
 .breadcrumbs-link {
@@ -1059,6 +1107,18 @@ body {
   font-size: 16px;
   line-height: 20px;
   text-decoration: none;
+}
+
+.breadcrumbs-link:hover {
+  opacity: 0.6;
+}
+
+.breadcrumbs-link:focus-visible {
+  outline: 2px solid #AF4FFF;
+}
+
+.breadcrumbs-link:active {
+  opacity: 0.3;
 }
 
 .catalog-products {
@@ -1113,9 +1173,12 @@ body {
 }
 
 .select-control {
+  font-family: "Rubik";
   font-size: 18px;
   line-height: 30px;
   color: #000000;
+  border: none;
+  background-color: #F0F0F0;
 }
 
 .button-sort-container {
@@ -1125,16 +1188,36 @@ body {
 
 .button-increase {
   display: block;
-  padding: 0;
   width: 30px;
   height: 30px;
+  background-image: url("../images/icons/arrow-up.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  opacity: 0.2;
+  border: none;
 }
 
 .button-decrease {
   display: block;
-  padding: 0;
   width: 30px;
   height: 30px;
+  background-image: url("../images/icons/arrow-down.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  opacity: 0.2;
+  border: none;
+}
+
+.button-increase:hover, .button-decrease:hover {
+  opacity: 0.5;
+}
+
+.button-increase:focus, .button-decrease:focus {
+  outline: 2px solid rgba(175, 79, 255, 1);
+}
+
+.button-increase:active, .button-decrease:active {
+  opacity: 1;
 }
 
 /* product */
@@ -1146,6 +1229,7 @@ body {
 }
 
 .product-list {
+  position: relative;
   display: grid;
   grid-template-columns: repeat(2, 360px);
   row-gap: 44px;
@@ -1161,6 +1245,10 @@ body {
   row-gap: 32px;
   column-gap: 20px;
   text-decoration: none;
+}
+
+.product-card-link:hover, .product-card-link:active {
+  opacity: 0.6;
 }
 
 .product-card-image {
@@ -1188,8 +1276,21 @@ body {
   margin: 0;
 }
 
-.product-card-more {
-  display: none;
+.product-card-item-more {
+  position: absolute;
+  font-family: "Raleway", sans-serif;
+  font-size: 18px;
+  line-height: normal;
+  letter-spacing: 3.6px;
+  color: #000000;
+  text-transform: uppercase;
+  text-decoration: none;
+  text-align: center;
+  padding: 10px 0;
+  width: 220px;
+  cursor: pointer;
+  margin: auto;
+  z-index: 1;
 }
 
 /* pagination */

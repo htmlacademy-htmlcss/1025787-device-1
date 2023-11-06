@@ -491,6 +491,15 @@ body {
   margin-bottom: 70px;
 }
 
+.slider-control {
+  position: absolute;
+  top: 210px;
+  width: 560px;
+  padding-left: 30px;
+  display: flex;
+  justify-content: space-between;
+}
+
 .slider-button {
   display: flex;
   justify-content: center;
@@ -499,8 +508,11 @@ body {
   width: 20px;
   height: 60px;
   background: transparent;
+  background-image: url('../images/icons/right-tall-arrow.svg');
+  background-repeat: no-repeat;
   border: none;
   z-index: 2;
+  cursor: pointer;
 }
 
 .slider-button:hover {
@@ -516,20 +528,8 @@ body {
   opacity: 0.3;
 }
 
-.slider-next {
-  position: absolute;
-  top: 211px;
-  left: 540px;
-  cursor: pointer;
-  background-image: url('../images/icons/right-tall-arrow.svg');
-}
-
 .slider-prev {
-  position: absolute;
-  top: 211px;
-  left: 30px;
-  cursor: pointer;
-  background-image: url('../images/icons/left-tall-arrow.svg');
+  transform: rotate(180deg);
 }
 
 .gallery-slider {
@@ -568,10 +568,6 @@ body {
   right: 50px;
   left: auto;
   bottom: 0;
-}
-
-.slider-button {
-  position: absolute;
 }
 
 .slider-image {

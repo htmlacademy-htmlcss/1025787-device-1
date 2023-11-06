@@ -119,7 +119,6 @@ body {
   color: #000000;
   background: linear-gradient(#FFFFFF 40px, #FFE17F 40px 100%);
   padding-top: 15px;
-  padding-bottom: 20px;
 }
 
 .navigation {
@@ -544,7 +543,6 @@ body {
   display: none;
   margin: 0;
   min-width: 710px;
-  margin-top: -20px;
 }
 
 .gallery-slider-item.is-active {
@@ -1345,6 +1343,10 @@ body {
 }
 
 /* CATALOG */
+
+.page-catalog {
+  padding-bottom: 20px;
+}
 
 .navigation-user-link-exit {
   color: rgba(0, 0, 0, 0.3);

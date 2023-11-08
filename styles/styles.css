@@ -1459,7 +1459,7 @@ body {
 
 .filter-conainer {
   width: 320px;
-  padding: 0 0 0 60px;
+  padding: 0 60px 0 60px;
 }
 
 .text-container {
@@ -1472,6 +1472,12 @@ body {
   row-gap: 35px;
 }
 
+.catalog-filter-group {
+  border: none;
+  padding: 0;
+  margin: 0;
+}
+
 .catalog-filter-title {
   font-weight: 700;
   font-size: 18px;
@@ -1479,17 +1485,141 @@ body {
   color: #000000;
   letter-spacing: -0.36px;
   padding: 0;
+  margin-bottom: 20px;
 }
 
-.catalog-filter-group {
-  border: none;
+.range-scale {
+  position: relative;
+  height: 2px;
+  margin-bottom: 11px;
+  background-color: #DCDCDC;
+}
+
+.range-bar {
+  position: absolute;
+  height: 2px;
+  background-color: #000000;
+}
+
+.range-toggle {
+  position: absolute;
+  width: 18px;
+  height: 18px;
+  cursor: pointer;
   padding: 0;
+  border: none;
+  background: transparent;
+}
+
+.range-toggle::before {
+  position: absolute;
+  content: '';
+  top: 0;
+  left: 0;
+  width: 18px;
+  height: 18px;
+  background-color: #EBEBEB;
+  border: 2px solid #000000;
+  border-radius: 50%;
+}
+
+.range-toggle:hover::before {
+  border: 2px solid rgba(0, 0, 0, 0.5);
+  background-color: rgba(235, 235, 235, 0.5);
+}
+
+.range-toggle:focus-visible {
+  outline: 2px solid #AF4FFF;
+  outline-offset: 2px;
+}
+
+.range-toggle:active::before {
+  border: #000000;
+  background-color: #000000;
+}
+
+.toggle-min {
+  top: -9px;
+  left: -9px;
+}
+
+.toggle-max {
+  top: -9px;
+  right: 0;
+}
+
+.range-wrapper-inputs {
+  position: relative;
+  display: flex;
+}
+
+.catalog-filter-label {
+  font-size: 14px;
+  line-height: 20px;
+  position: absolute;
+  display: flex;
+  color: rgba(0, 0, 0, 0.3);
+}
+
+.range-input {
+  font: inherit;
+  padding: 0 2px;
+  color: rgba(0, 0, 0, 0.3);
+  background-color: transparent;
+  border: none;
+  appearance: textfield;
+}
+
+.range-input::-webkit-outer-spin-button,
+.range-input::-webkit-inner-spin-button {
+  appearance: none;
   margin: 0;
 }
 
 .catalog-filter-list {
   list-style-type: none;
   padding: 0;
+  margin: 0;
+}
+
+.control {
+  position: relative;
+  display: block;
+  padding-left: 36px;
+}
+
+.control:hover {
+  opacity: 0.6;
+}
+
+.control:active {
+  opacity: 0.3;
+}
+
+.control:disabled {
+  opacity: 0.1;
+}
+
+.control-mark {
+  position: absolute;
+  top: 2px;
+  left: 0;
+  width: 16px;
+  height: 16px;
+  border: 2px solid #242424;
+  border-radius: 3px;
+}
+
+.control-input[type="checkbox"]:checked + .control-mark::before {
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  width: 8px;
+  height: 8px;
+  background-image: url("../images/icons/tick.svg");
+  background-repeat: no-repeat;
+  background-size: 8px 8px;
+  content: '';
 }
 
 .button-catalog-filter {

@@ -1470,6 +1470,7 @@ body {
   display: flex;
   flex-direction: column;
   row-gap: 35px;
+  margin-top: 35px;
 }
 
 .catalog-filter-group {
@@ -1479,13 +1480,21 @@ body {
 }
 
 .catalog-filter-title {
+  width: 100%;
   font-weight: 700;
   font-size: 18px;
   line-height: 20px;
   color: #000000;
   letter-spacing: -0.36px;
   padding: 0;
+  padding-top: 12px;
   margin-bottom: 20px;
+  border-top: 2px solid #000000;
+}
+
+.range {
+  padding-top: 10px;
+  padding-bottom: 20px;
 }
 
 .range-scale {
@@ -1576,7 +1585,25 @@ body {
   margin: 0;
 }
 
+.range-input:focus-visible {
+  outline: none;
+}
+
+.range-input:focus-visible + .range-input-mark::before {
+  position: absolute;
+  content: '';
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  outline: 2px solid #AF4FFF;
+  outline-offset: 2px;
+}
+
 .catalog-filter-list {
+  display: flex;
+  flex-direction: column;
+  row-gap: 17px;
   list-style-type: none;
   padding: 0;
   margin: 0;
@@ -1602,24 +1629,51 @@ body {
 
 .control-mark {
   position: absolute;
-  top: 2px;
+  top: 0;
   left: 0;
-  width: 16px;
-  height: 16px;
+  width: 20px;
+  height: 20px;
   border: 2px solid #242424;
   border-radius: 3px;
 }
 
 .control-input[type="checkbox"]:checked + .control-mark::before {
   position: absolute;
-  top: 2px;
-  left: 2px;
-  width: 8px;
-  height: 8px;
+  top: 3px;
+  left: 3px;
+  width: 10px;
+  height: 10px;
   background-image: url("../images/icons/tick.svg");
   background-repeat: no-repeat;
-  background-size: 8px 8px;
+  background-size: 10px 10px;
   content: '';
+}
+
+.control-input:focus-visible + .control-mark::after {
+  position: absolute;
+  content: '';
+  width: 20px;
+  height: 20px;
+  top: -2px;
+  left: -2px;
+  background: transparent;
+  outline: 2px solid #AF4FFF;
+  outline-offset: 2px;
+}
+
+.control-input[type="radio"] + .control-mark {
+  border-radius: 50%;
+}
+
+.control-input[type="radio"]:checked + .control-mark::before {
+  position: absolute;
+  content: '';
+  top: 4px;
+  left: 4px;
+  width: 8px;
+  height: 8px;
+  background-color: #000000;
+  border-radius: 50%;
 }
 
 .button-catalog-filter {

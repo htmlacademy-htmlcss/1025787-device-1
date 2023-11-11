@@ -2138,6 +2138,22 @@ body {
   opacity: 0.3;
 }
 
+.pagination-show-more-disabled,
+.pagination-show-more:disabled {
+  opacity: 0.3;
+}
+
+.pagination-show-more-disabled:hover,
+.pagination-show-more-disabled:focus-visible,
+.pagination-show-more-disabled:active,
+.pagination-show-more:disabled:hover,
+.pagination-show-more:disabled:active {
+  opacity: 0.3;
+  outline: none;
+  cursor: default;
+  border: 3px solid #E5E5E5;
+}
+
 .pagination-container {
   display: flex;
   justify-content: space-between;

@@ -443,12 +443,12 @@
           <form class="modal-delivery-form" action="https://echo.htmlacademy.ru" method="post">
             <div class="delivery-form-container delivery-form-name">
               <label class="delivery-form-label" for="delivery-name">Ваше имя:</label>
-              <input class="delivery-form-input" type="text" id="delivery-name" name="delivery-name" placeholder="Введите имя" required>
+              <input class="delivery-form-input name" type="text" id="delivery-name" name="delivery-name" placeholder="Введите имя" required>
               <p class="delivery-text">Добавьте имя</p>
             </div>
             <div class="delivery-form-container delivery-form-mail">
               <label class="delivery-form-label" for="delivery-mail">Ваш e-mail:</label>
-              <input class="delivery-form-input wrong" type="email" id="delivery-mail" name="delivery-mail" placeholder="petuhov@yandex.ru" value="Почта" required>
+              <input class="delivery-form-input mail wrong" type="email" id="delivery-mail" name="delivery-mail" placeholder="petuhov@yandex.ru" value="Почта" required>
               <p class="delivery-text wrong">Забавный у вас адрес</p>
             </div>
             <div class="delivery-form-container delivery-form-product">
@@ -456,7 +456,18 @@
               <textarea class="delivery-form-input textarea" id="delivery-product" name="delivery-product" rows="1" placeholder="В свободной форме" required></textarea>         </textarea>
             </div>
             <div class="delivery-form-container delivery-form-number">
-              <label class="delivery-form-label" for="delivery-number">Количество:</label>
+              <span class="delivery-form-label form-label-icon">
+                <label class="delivery-form-label" for="delivery-number">Количество:</label>
+                <span class="tooltip">
+                  <button class="tooltip-toggle" type="button" aria-labelledby="tooltip-label-sum">
+                    <svg class="tooltip-icon" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="none" viewBox="0 0 26 26">
+                      <circle cx="13" cy="13" r="13" fill="#FFE17F"/>
+                      <path fill="#000" d="M14 7h-2v2h2V7ZM14 11h-2v8h2v-8Z"/>
+                    </svg>
+                  </button>
+                  <span class="tooltip-text" role="tooltip" id="tooltip-label-sum">Постараемся найти, сколько нужно. Привезём сколько получится по&#160;требованиям к&#160;провозу багажа.</span>
+                </span>
+              </span>
               <div class="delivery-form-number">
                 <button class="delivery-form-button minus" type="button">
                   <span class="visually-hidden">Уменьшить количество.</span>

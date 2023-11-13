@@ -29,7 +29,48 @@
               <a class="navigation-user-link compare" href="#">Сравнить</a>
             </li>
             <li class="navigation-user-item">
-              <a class="navigation-user-link cart" href="#">Корзина</a>
+              <a class="navigation-user-link cart" href="#">
+                <span class="amount">2</span>
+                Корзина
+              </a>
+              <div class="popover popover-cart">
+                <div class="popover-content">
+                  <h2 class="visually-hidden">Корзина</h2>
+                  <ul class="cart-items-list">
+                    <li class="cart-item">
+                      <a class="cart-item-link" href="#">
+                        <img class="cart-item-img" src="images/product-1-small.jpg" width="39" height="43" alt="">
+                        <p class="cart-item-title">Любительская <br> селфи-палка</p>
+                      </a>
+                      <button type="button" class="cart-item-button">
+                        <span class="visually-hidden">Удалить из корзины</span>
+                      </button>
+                    </li>
+                    <li class="cart-item">
+                      <a class="cart-item-link" href="#">
+                        <img class="cart-item-img" src="images/product-2-small.jpg" width="39" height="43" alt="">
+                        <p class="cart-item-title">Профессиональная <br> селфи-палка</p>
+                      </a>
+                      <button type="button" class="cart-item-button">
+                        <span class="visually-hidden">Удалить из корзины</span>
+                      </button>
+                    </li>
+                  </ul>
+                </div>
+                <div class="popover-result">
+                  <div class="popover-result-number">
+                    Товаров:
+                    <span class="popover-amount">2</span>
+                  </div>
+                  <div class="popover-result-sum">
+                    Сумма:
+                    <span class="popover-amount">2000 ₽</span>
+                  </div>
+                </div>
+                <button type="button" class="cart-open">
+                  Открыть корзину
+                </button>
+              </div>
             </li>
           </ul>
         </div>
@@ -101,37 +142,64 @@
           <form class="catalog-filter" action="https://echo.htmlacademy.ru/" method="get">
             <fieldset class="catalog-filter-group">
               <legend class="catalog-filter-title">Стоимость</legend>
+                <div class="range">
+                  <div class="range-scale">
+                    <div class="range-bar" style="left: 0; width: 119px;">
+                      <button class="range-toggle toggle-min">
+                        <span class="visually-hidden">Изменить минимальную цену.</span>
+                      </button>
+                      <button class="range-toggle toggle-max">
+                        <span class="visually-hidden">Изменить максимальную цену.</span>
+                      </button>
+                    </div>
+                  </div>
+                  <div class="range-wrapper-inputs">
+                    <label class="catalog-filter-label" style="left: -14px; width: 30px;">
+                      от <input class="range-input" type="number" value="0" name="min-price" style="width: 20px;">
+                      <span class="range-input-mark"></span>
+                    </label>
+                    <label class="catalog-filter-label" style="left: 83px; width: 71px;">
+                      до <input class="range-input" type="number" value="5000" name="max-price" style="width: 55px;">
+                      <span class="range-input-mark"></span>
+                    </label>
+                  </div>
+                </div>
             </fieldset>
             <fieldset class="catalog-filter-group">
               <legend class="catalog-filter-title">Цвет</legend>
               <ul class="catalog-filter-list">
                 <li class="catalog-filter-item">
                   <label class="control">
-                    <input class="control-input" type="checkbox" name="black" checked>
+                    <input class="visually-hidden control-input" type="checkbox" name="black" checked>
+                    <span class="control-mark"></span>
                     Черный
                   </label>
                 </li>
                 <li class="catalog-filter-item">
                   <label class="control">
-                    <input class="control-input" type="checkbox" name="white" checked>
+                    <input class="visually-hidden control-input" type="checkbox" name="white" checked>
+                    <span class="control-mark"></span>
                     Белый
                   </label>
                 </li>
                 <li class="catalog-filter-item">
                   <label class="control">
-                    <input class="control-input" type="checkbox" name="blue">
+                    <input class="visually-hidden control-input" type="checkbox" name="blue">
+                    <span class="control-mark"></span>
                     Синий
                   </label>
                 </li>
                 <li class="catalog-filter-item">
                   <label class="control">
-                    <input class="control-input" type="checkbox" name="red">
+                    <input class="visually-hidden control-input" type="checkbox" name="red">
+                    <span class="control-mark"></span>
                     Красный
                   </label>
                 </li>
                 <li class="catalog-filter-item">
                   <label class="control">
-                    <input class="control-input" type="checkbox" name="pink">
+                    <input class="visually-hidden control-input" type="checkbox" name="pink">
+                    <span class="control-mark"></span>
                     Розовый
                   </label>
                 </li>
@@ -142,13 +210,15 @@
               <ul class="catalog-filter-list">
                 <li class="catalog-filter-item">
                   <label class="control">
-                    <input class="control-input" type="radio" name="Bluetooth" value="Yes" checked>
+                    <input class="visually-hidden control-input" type="radio" name="Bluetooth" value="Yes" checked>
+                    <span class="control-mark"></span>
                     Есть
                   </label>
                 </li>
                 <li class="catalog-filter-item">
                   <label class="control">
-                    <input class="control-input" type="radio" name="Bluetooth" value="No">
+                    <input class="visually-hidden control-input" type="radio" name="Bluetooth" value="No">
+                    <span class="control-mark"></span>
                     Нет
                   </label>
                 </li>

@@ -33,6 +33,44 @@
                 <span class="amount">2</span>
                 Корзина
               </a>
+                <div class="popover popover-cart">
+                  <div class="popover-content">
+                    <h2 class="visually-hidden">Корзина</h2>
+                    <ul class="cart-items-list">
+                      <li class="cart-item">
+                        <a class="cart-item-link" href="#">
+                          <img class="cart-item-img" src="images/product-1-small.jpg" width="39" height="43" alt="">
+                          <p class="cart-item-title">Любительская <br> селфи-палка</p>
+                        </a>
+                        <button type="button" class="cart-item-button">
+                          <span class="visually-hidden">Удалить из корзины</span>
+                        </button>
+                      </li>
+                      <li class="cart-item">
+                        <a class="cart-item-link" href="#">
+                          <img class="cart-item-img" src="images/product-2-small.jpg" width="39" height="43" alt="">
+                          <p class="cart-item-title">Профессиональная <br> селфи-палка</p>
+                        </a>
+                        <button type="button" class="cart-item-button">
+                          <span class="visually-hidden">Удалить из корзины</span>
+                        </button>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="popover-result">
+                    <div class="popover-result-number">
+                      Товаров:
+                      <span class="popover-amount">2</span>
+                    </div>
+                    <div class="popover-result-sum">
+                      Сумма:
+                      <span class="popover-amount">2000 ₽</span>
+                    </div>
+                  </div>
+                  <button type="button" class="cart-open">
+                    Открыть корзину
+                  </button>
+                </div>
             </li>
           </ul>
         </div>
@@ -86,12 +124,14 @@
         <h1 class="visually-hidden">Интернет-магазин «Девайс»</h1>
         <section class="gallery page-container">
           <h2 class="visually-hidden">Фотогалерея с описанием</h2>
-          <button class="slider-button slider-prev" type="button">
-            <span class="visually-hidden">Предыдущее фото</span>
-          </button>
-          <button class="slider-button slider-next" type="button">
-            <span class="visually-hidden">Следующее фото</span>
-          </button>
+          <div class="slider-control">
+            <button class="slider-button slider-prev" type="button">
+              <span class="visually-hidden">Предыдущее фото</span>
+            </button>
+            <button class="slider-button slider-next" type="button">
+              <span class="visually-hidden">Следующее фото</span>
+            </button>
+          </div>
           <ul class="gallery-slider">
             <li class="gallery-slider-item is-active">
               <img class="slider-image" src="images/slider/slider-1.png" width="560" height="560" alt="Квадрокоптер.">
@@ -392,6 +432,59 @@
         </a>
       </div>
     </footer>
+
+    <div class="modal-container modal-container-close">
+      <div class="modal modal-delivery">
+        <button class="modal-close-button">
+          <span class="visually-hidden">Закрыть</span>
+        </button>
+        <section class="modal-content">
+          <h2 class="modal-title">Доставка под заказ</h2>
+          <form class="modal-delivery-form" action="https://echo.htmlacademy.ru" method="post">
+            <div class="delivery-form-container delivery-form-name">
+              <label class="delivery-form-label" for="delivery-name">Ваше имя:</label>
+              <input class="delivery-form-input name" type="text" id="delivery-name" name="delivery-name" placeholder="Введите имя" required>
+              <p class="delivery-text">Добавьте имя</p>
+            </div>
+            <div class="delivery-form-container delivery-form-mail">
+              <label class="delivery-form-label" for="delivery-mail">Ваш e-mail:</label>
+              <input class="delivery-form-input mail wrong" type="email" id="delivery-mail" name="delivery-mail" placeholder="petuhov@yandex.ru" value="Почта" required>
+              <p class="delivery-text wrong">Забавный у вас адрес</p>
+            </div>
+            <div class="delivery-form-container delivery-form-product">
+              <label class="delivery-form-label" for="delivery-product">Что нужно привезти:</label>
+              <textarea class="delivery-form-input textarea" id="delivery-product" name="delivery-product" rows="1" placeholder="В свободной форме" required></textarea>         </textarea>
+            </div>
+            <div class="delivery-form-container delivery-form-number">
+              <span class="delivery-form-label form-label-icon">
+                <label class="delivery-form-label" for="delivery-number">Количество:</label>
+                <span class="tooltip">
+                  <button class="tooltip-toggle" type="button" aria-labelledby="tooltip-label-sum">
+                    <svg class="tooltip-icon" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="none" viewBox="0 0 26 26">
+                      <circle cx="13" cy="13" r="13" fill="#FFE17F"/>
+                      <path fill="#000" d="M14 7h-2v2h2V7ZM14 11h-2v8h2v-8Z"/>
+                    </svg>
+                  </button>
+                  <span class="tooltip-text" role="tooltip" id="tooltip-label-sum">Постараемся найти, сколько нужно. Привезём сколько получится по&#160;требованиям к&#160;провозу багажа.</span>
+                </span>
+              </span>
+              <div class="delivery-form-number">
+                <button class="delivery-form-button minus" type="button">
+                  <span class="visually-hidden">Уменьшить количество.</span>
+                </button>
+                <input class="delivery-form-input number" type="number" name="delivery-number" id="delivery-number" value="1">
+                <button class="delivery-form-button plus" type="button">
+                  <span class="visually-hidden">Увеличить количество.</span>
+                </button>
+              </div>
+            </div>
+            <button class="button" type="submit">
+              <span class="form-button-text">Отправить</span>
+            </button>
+          </form>
+        </section>
+      </div>
+    </div>
 
     <script src="js/script.js"></script>
 

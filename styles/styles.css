@@ -703,14 +703,20 @@ body {
 /* Slider */
 
 .gallery {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   position: relative;
+  min-width: 1160px;
   color: #000000;
-  margin-bottom: 73px;
+  margin-bottom: 70px;
 }
 
 .slider-control {
   position: absolute;
-  top: 210px;
+  left: 0;
+  top: 195px;
   width: 560px;
   padding-left: 30px;
   display: flex;
@@ -754,7 +760,8 @@ body {
 }
 
 .gallery-slider {
-  margin: -15px auto;
+  min-width: 1160px;
+  margin: -15px auto 0 auto;
   padding: 0;
   counter-reset: gallery-slider-number;
   background: linear-gradient(#ffe17f 150px, #ffffff 150px 100%);
@@ -798,6 +805,7 @@ body {
   flex-grow: 1;
   padding-left: 40px;
   margin-top: 121px;
+  padding-bottom: 36px;
 }
 
 .gallery-slider-slogan {
@@ -835,6 +843,8 @@ body {
 }
 
 .slider-pagination {
+  position: absolute;
+  bottom: 0;
   display: flex;
   list-style-type: none;
   margin: 0 auto;
@@ -926,7 +936,7 @@ body {
 /* services */
 
 .services {
-  background: linear-gradient(#ffffff 106px, #f0f0f0 106px 100%);
+  background: linear-gradient(#ffffff 102px, #f0f0f0 102px 100%);
   margin: 0 auto;
   padding-bottom: 72px;
   margin-bottom: 72px;
@@ -1304,7 +1314,7 @@ body {
   display: flex;
   align-items: center;
   flex-wrap: wrap;
-  row-gap: 142px;
+  row-gap: 143px;
 }
 
 .newsletter-title {
@@ -1739,7 +1749,12 @@ body {
 }
 
 .delivery-form-input.textarea {
+  font-family: "Rubik", sans-serif;
+  font-size: 16px;
+  line-height: 20px;
+  color: #000000;
   resize: none;
+  height: 60px;
 }
 
 .delivery-form-name .delivery-form-input,
@@ -1748,9 +1763,6 @@ body {
 }
 
 .delivery-form-input::placeholder {
-  font-family: "Rubik", sans-serif;
-  font-size: 16px;
-  line-height: 20px;
   color: rgba(0, 0, 0, 0.3);
 }
 
@@ -1834,6 +1846,7 @@ body {
   text-align: center;
   width: 60px;
   height: 60px;
+  padding: 5px;
 }
 
 .delivery-form-input.number::-webkit-outer-spin-button,
@@ -1841,6 +1854,10 @@ body {
   -webkit-appearance: none;
           appearance: none;
   margin: 0;
+}
+
+.delivery-form-input.number[type=number] {
+  -moz-appearance: textfield;
 }
 
 .delivery-form-button {

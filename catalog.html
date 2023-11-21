@@ -3,12 +3,13 @@
   <head>
     <meta charset="utf-8">
     <title>Интернет-магазин «Девайс»</title>
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
     <link rel="stylesheet" href="styles/styles.css">
   </head>
   <body>
     <header class="page-header page-container page-catalog">
       <nav class="navigation">
-        <a class="navigation-logo" href="index.html">
+        <a class="navigation-logo page-catalog" href="index.html">
           <img class="page-header-logo" src="images/logo-header.svg" width="145" height="36" alt="Логотип интернет-магазин «Девайс».">
         </a>
         <div class="form-and-navigation-user">
@@ -136,7 +137,7 @@
         </ul>
       </header>
       <section class="catalog-products">
-        <h2 class="visually-hidden" hidden>Список товаров с фильтрами</h2>
+        <h2 class="visually-hidden">Список товаров с фильтрами</h2>
         <div class="filter-conainer">
           <h3 class="catalog-products-title text-container">фильтр:</h3>
           <form class="catalog-filter" action="https://echo.htmlacademy.ru/" method="get">
@@ -144,21 +145,21 @@
               <legend class="catalog-filter-title">Стоимость</legend>
                 <div class="range">
                   <div class="range-scale">
-                    <div class="range-bar" style="left: 0; width: 119px;">
-                      <button class="range-toggle toggle-min">
+                    <div class="range-bar" style="left: 0; width: 128px;">
+                      <button class="range-toggle toggle-min" type="button">
                         <span class="visually-hidden">Изменить минимальную цену.</span>
                       </button>
-                      <button class="range-toggle toggle-max">
+                      <button class="range-toggle toggle-max" type="button">
                         <span class="visually-hidden">Изменить максимальную цену.</span>
                       </button>
                     </div>
                   </div>
                   <div class="range-wrapper-inputs">
-                    <label class="catalog-filter-label" style="left: -14px; width: 30px;">
+                    <label class="catalog-filter-label" style="left: -12px; width: 30px;">
                       от <input class="range-input" type="number" value="0" name="min-price" style="width: 20px;">
                       <span class="range-input-mark"></span>
                     </label>
-                    <label class="catalog-filter-label" style="left: 83px; width: 71px;">
+                    <label class="catalog-filter-label" style="left: 92px; width: 71px;">
                       до <input class="range-input" type="number" value="5000" name="max-price" style="width: 55px;">
                       <span class="range-input-mark"></span>
                     </label>
@@ -365,7 +366,7 @@
           </li>
           <li class="footer-social-item">
             <a class="button-social button-social-tw" href="https://twitter.com/htmlacademy_ru">
-              <svg class="button-social-image" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" width="16" height="14"">
+              <svg class="button-social-image" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" width="16" height="14">
                 <path fill-rule="evenodd" clip-rule="evenodd" d="M10.35.15c1.6-.5 2.77.3 3.41 1.1.53-.2 1.17-.4 1.81-.6a2 2 0 0 1-.85 1.6c.75.2 1.28-.4 1.28-.4-.1.9-.96 1.7-1.5 1.89-.2 6.27-2.98 10.36-9.49 10.26H4.6c-.32 0-3.95-.4-4.59-1.8 2.13.2 3.63-.4 4.37-1.09-.85-.3-2.56-.4-2.77-2.79.32.2.53.3 1.17.2C1.6 7.72.32 7.02.43 5.03c.32.3.96.5 1.28.4C1.07 5.23-.21 2.35.85.85c1.71 1.7 3.52 3.39 6.72 3.49C7.8 2.24 8.64.85 10.35.15Z"/>
               </svg>
               <span class="visually-hidden">Twitter</span>

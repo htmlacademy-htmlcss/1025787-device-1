@@ -15,7 +15,7 @@
         <div class="form-and-navigation-user">
           <form class="search-form" action="https://echo.htmlacademy.ru/" method="get">
             <label for="page-header-search" class="visually-hidden">Поиск</label>
-            <input class="field-search" type="search" id="page-header-search" name="page-header-search" placeholder="Поиск по сайту">
+            <input class="field-search" type="search" id="page-header-search" name="page-header-search" placeholder="Поиск по сайту" required>
             <button class="button-search" type="submit">Найти</button>
           </form>
           <ul class="navigation-user">
@@ -36,7 +36,6 @@
               </a>
                 <div class="popover popover-cart">
                   <div class="popover-content">
-                    <h2 class="visually-hidden">Корзина</h2>
                     <ul class="cart-items-list">
                       <li class="cart-item">
                         <a class="cart-item-link" href="#">
@@ -301,12 +300,7 @@
         </section>
         <section class="delivery page-container">
           <h2 class="visually-hidden">Доставка под заказ</h2>
-          <a class="delivery-link" href="#">
-            <div class="delivery-container">
-              <p class="text delivery-about">Доставим редкий товар под заказ</p>
-              <span class="visually-hidden">Форма доставки под заказ</span>
-            </div>
-          </a>
+          <a class="delivery-link" href="#">Доставим редкий товар под заказ</a>
         </section>
         <div class="about-and-contacts page-container">
           <section class="about">
@@ -436,7 +430,7 @@
 
     <div class="modal-container modal-container-close">
       <div class="modal modal-delivery">
-        <button class="modal-close-button">
+        <button class="modal-close-button" type="button">
           <span class="visually-hidden">Закрыть</span>
         </button>
         <section class="modal-content">

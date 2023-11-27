@@ -412,7 +412,6 @@ body {
 }
 
 .navigation-link-button:focus-visible {
-  border-color: rgba(0, 0, 0, 1);
   outline: none;
 }
 
@@ -423,10 +422,6 @@ body {
   height: 50px;
   outline: 2px solid #af4fff;
   outline-offset: 2px;
-}
-
-.navigation-link-button:focus-visible::before {
-  opacity: 1;
 }
 
 .navigation-link-button:active {
